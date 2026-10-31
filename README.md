@@ -1,3 +1,17 @@
+# Snake for the Light Phone III
+
+A Snake game built on the Light SDK. The game lives in the [`tool`](./tool) module; everything else is the upstream SDK.
+
+- **Play:** swipe anywhere below the top bar to steer. Tap to start, resume, or play again. `PAUSE` is in the top bar.
+- **Keys:** D-pad, `2`/`4`/`6`/`8`, or `W`/`A`/`S`/`D` steer; center, `5`, Enter, or Space pauses and resumes.
+- **Menu:** tap `Level` to cycle speeds 1 to 9 (faster levels score more per bite), and `Walls` to choose between walls that end the run or edges that wrap around.
+- Eating gives a short haptic tick and crashing a longer buzz, following the LightOS haptics setting. The best score is kept on the device.
+- Follows the LightOS light/dark theme. Needs no permissions and no network.
+
+Game rules are in [`SnakeGame.kt`](tool/src/main/kotlin/com/derekr/snake/game/SnakeGame.kt), with unit tests next to them (`./gradlew :tool:testDebugUnitTest`).
+
+---
+
 # light-sdk
 or: a tool for building Tools
 
